@@ -6,8 +6,8 @@ app = Flask(__name__, template_folder="templates")
 
 # Load the CSV data
 def load_data():
-    # csv_path = 'medium_articles.csv' # for development
-    csv_path = os.path.join(os.path.dirname(__file__), 'medium_articles.csv') # for deployment
+    csv_path = 'medium_articles.csv'
+    # csv_path = os.path.join(os.path.dirname(__file__), 'medium_articles.csv')
 
     
     if not os.path.exists(csv_path):
